@@ -1,0 +1,28 @@
+body {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.mainframe {
+    width: 600px;
+    margin: auto;
+    background-color: rgb(216, 216, 216);
+}
+
+nav {
+    display: block;
+    width: 100%;
+}
+
+.searchBar {
+    border:none;
+    background: none;
+    outline:none;
+    float:left;
+    padding: 0;
+    color: white;
+    font-size: 16px;
+    transition: 0.4s;
+    line-height: 40px;
+}

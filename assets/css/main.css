@@ -1,0 +1,16 @@
+body {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.mainframe {
+    width: 600px;
+    margin: auto;
+    background-color: rgb(216, 216, 216);
+}
+
+nav {
+    display: block;
+    width: 100%;
+}

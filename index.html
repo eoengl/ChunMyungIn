@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/main.css"/>     
+    <link rel="stylesheet" href="node_modules/swiper/swiper-bundle.css"/> 
+    <link rel="stylesheet" href="node_modules/swiper/swiper-bundle.min.css"/> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="node_modules/swiper/swiper-bundle.js"></script>
+    <script src="node_modules/swiper/swiper-bundle.min.js"></script>    
+    <title>천명인 - 하늘의 뜻을 인간에게</title>
+</head>
+<body>
+  <div class="mainframe">
+    <nav>
+        <div class="logo"><span>천명인</span></div>
+        <div class="menu">
+          <span></span>
+          <span></span>
+          <span></span>
+          <ul id="side_nav">
+            <a href="#"><li>로그인</li></a>
+            <a href="#"><li>홈</li></a>
+            <a href="#"><li>예약정보</li></a>
+            <a href="#"><li>Contact</li></a>
+          </ul>
+        </div>
+                
+    </nav>
+    <!--Search Bar-->
+    <div class="searchbar">      
+      <form class="example">
+        <input type="text" placeholder="원하시는 선생님을 검색해 주세요." name="search">
+        <button type="submit"><i class="fa fa-search"></i></button>
+      </form>
+    </div>
+    
+    <!--Top Main img slider-->
+    <div class="swiper-container">
+      <!-- Additional required wrapper -->
+      <div class="swiper-wrapper">
+        <!-- Slides -->
+        <div class="swiper-slide"><img src="assets/img/img_1.png" alt=""></div>
+        <div class="swiper-slide"><img src="assets/img/img_2.png" alt=""></div>
+        <div class="swiper-slide"><img src="assets/img/img_3.png" alt=""></div>
+        ...
+      </div>
+      <!-- If we need pagination -->
+      <div class="swiper-pagination"></div>
+      
+      
+    </div>     
+
+    <!--Top Main img slider-->
+    <div class="category">
+
+
+    </div>
+    <div class="able">
+
+    </div>
+    <div class="addbanner">
+
+    </div>   
+    <div class="introduce">
+
+    </div>    
+  </div>
+
+  <script>
+    var swiper = new Swiper(".swiper-container", {
+      spaceBetween: 30,
+      centeredSlides: true,
+      autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+      },
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+
+    /* Set the width of the side navigation to 250px and the left margin of the page content to 250px and add a black background color to body */
+function openNav() {
+  document.getElementById("side_nav").style.width = "250px";
+  document.getElementById("main").style.marginLeft = "250px";
+  document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+}
+
+/* Set the width of the side navigation to 0 and the left margin of the page content to 0, and the background color of body to white */
+function closeNav() {
+  document.getElementById("side_nav").style.width = "0";
+  document.getElementById("main").style.marginLeft = "0";
+  document.body.style.backgroundColor = "white";
+}
+
+  </script>
+
+
+</body>
+</html>

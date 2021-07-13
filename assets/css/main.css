@@ -5,6 +5,7 @@ body {
 }
 
 .mainframe {
+    display: block;
     width: 600px;
     margin: auto;
     background-color: rgb(216, 216, 216);
@@ -13,4 +14,43 @@ body {
 nav {
     display: block;
     width: 100%;
+}
+
+.serchContainer {
+    position: relative;
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    left: 50%;
+    transform: translateX(-40%);
+}
+
+.searchBar {
+    width: 80%;
+    height: 55px;
+    border-radius: 27px;
+    border: none;   
+
+}
+
+input::placeholder {
+    padding-left: 10%;
+}
+
+button {
+        position: relative;
+        right: 10%;        
+        background-color: #C00;
+        border-radius: 50%;
+        border: 0;
+        color: #FFF;
+        width: 35px;
+        height: 35px;
+        outline: 0;
+      }
+
+
+.swiper-pagination {
+    display: absolute;
+    width: 600px;
 }

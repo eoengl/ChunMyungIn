@@ -11,10 +11,6 @@ ul {
     transition: all 0.35s ease-in;
 }
 
-a {
-    text-decoration: none;    
-}
-
 li {
     padding-top: 50px;
     padding-left: 20px;

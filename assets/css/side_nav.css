@@ -6,7 +6,7 @@ ul {
     background-color: black;
     z-index: 99;
     transform: translateX(100%);
-    
+    top: -16px;
     right: 0;
     transition: all 0.35s ease-in;
 }
@@ -29,7 +29,7 @@ label {
     position: relative;
     width: 36px;
     height: 22px;
-    left: 100%;
+    left: 85%;
     top: 50%;
     transform: translateY(-50%);
 }

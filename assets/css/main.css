@@ -23,21 +23,26 @@ header {
 
 .logo {    
     width: 130px;
+    padding-left: 5%;
+    top: 50%;
     
 }
 
-label {
-    position: relative;
-    top: 0;
-    right: 0;
+nav {
+    width: 100%;
 }
 
-
+label .menu-btn {
+    position: relative;
+    top: 50%;
+    right: 85%;
+}
 
 .serch-container {    
     width: 100%;
-    margin-top: 10px;
-    margin-bottom: 10px;
+    margin-top: 38px;
+    margin-bottom: 38px;
+
 }
 
 .search-bar {   
@@ -46,16 +51,18 @@ label {
     height: 55px;
     border-radius: 27px;
     border: none;   
-    background-color: #2c2c2c;
+    background-color: #777777;
     left: 50%;
     transform: translateX(-50%);
 }
 
 input::placeholder {
-    padding-left: 10%;
+    padding-left: 5%;
+    color: white;
+    font-size: 16px;
 }
 
-button {
+.serch-container button {
         position: relative;        
         background-color: transparent;
         border: none;
@@ -64,12 +71,14 @@ button {
         height: 35px;
         outline: 0;
         font-size: 20px;
-        padding-right: 36px;
+        top: 0px;
+        left: -30px;
       }
 
 /* 운세보기 */
 .subtitle {
-    padding-left: 20px;
+    margin-top: 24px;
+    padding-left: 32px;
     font-size: 22px;
     color: #133C5A;
 }
@@ -78,8 +87,7 @@ button {
     display: flex;
     justify-content: space-between;
     padding-left: 32px;
-    padding-right: 32
-    px;
+    padding-right: 32px;
 }
 
 .bar-deco {
@@ -89,7 +97,7 @@ button {
     width: 20px;
     height: 4px;
     top: -20px;
-    left: 20px;
+    left: 32px;
     background-color: #9891FF;
 }
 
@@ -116,7 +124,7 @@ button {
 .img-box:nth-child(3) {
     background-color: #818AFF;
     background-image: url(/assets/img/bg/3-3.png);
-    box-shadow: 3px 3px 6px rgba(129, 138, 255, 0.43);
+    box-shadow: 3px 3px 6px rgba(129, 138, 255, .43);
 }
 
 .category img {
@@ -131,3 +139,100 @@ button {
     text-align: center;
     bottom: 10px;
 }
+
+/* 상담가능 */
+.able {
+    padding-left: 32px;  
+}
+
+.ablebox-1, .ablebox-2, .ablebox-3  {
+    display: block;
+    width: 196px;
+    height: 220px;
+    content: "";    
+    border: white  2px;
+    border-radius: 15px;
+    box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.3);
+}
+
+.boolking-btn {
+    position: relative;
+    bottom: -186px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90px;
+    height: 28px;
+    border: none;
+    border-radius: 5px;
+    background-color: #6D6D6D;
+    text-align: center;
+    color: white;
+    cursor: pointer;
+}
+
+.ablebox-1:hover, .ablebox-2:hover, .ablebox-3:hover {
+    transition:  all 0.35s ease-out;
+    box-shadow: 6px 6px 6px rgba(0, 0, 0, 0.4);
+}
+
+.boolking-btn:hover {
+    background-color: white;
+    color: red;
+    transition:  all 0.35s ease-out;
+}
+
+
+.ablebox-1 {
+    background-color: red;
+}
+.ablebox-2 {
+    background-color: green;
+}
+.ablebox-3 {
+    background-color: hotpink;
+}
+
+
+.addbanner img {
+    padding-left: 32px;
+    padding-top: 38px;
+}
+
+
+/* 천명인 이야기 */
+
+.story {
+    
+    background-color: #9282EF;
+    box-shadow: 3px 3px 6px rgba(146, 130, 239, 0.4);
+    border-radius: 5px;
+    border: none;
+    width: 534px;
+    align-items: center;
+}
+
+.story img {
+    padding:4px;
+    width: 212px;
+    height: 212px;
+}
+
+.story-txtbox {
+    position: relative;
+    background-color: rgb(173, 173, 173);
+    width: 534px;
+    top: -4px;
+}
+
+.story-title {
+    margin-top: 14px;
+    padding: 14px 10px 10px 10px; 
+    font-size: 24px;
+    color:white;
+}
+
+.story-description {
+    font-size: 14px;
+    padding: 10px;
+}
+

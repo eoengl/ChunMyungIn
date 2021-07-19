@@ -19,18 +19,18 @@
       <div class="logo" OnClick="location.href ='#'" style="cursor:pointer;"><img src="assets/img/logo.jpg" alt=""> </div>
       <nav>
         <input type="checkbox" id="menu">
-        <label for="menu" class="menu-btn">
-          <span></span>
-          <span></span>
-          <span></span>
-         </label>
+          <label for="menu" class="menu-btn">
+            <span></span>
+            <span></span>
+            <span></span>
+          </label>
           <ul class="side_nav">
             <a href="#"><li>로그인</li></a>
             <a href="#"><li>홈</li></a>
             <a href="#"><li>예약정보</li></a>
             <a href="#"><li>Contact</li></a>
           </ul>        
-    </nav>            
+      </nav>            
     </header>
    
     
@@ -41,7 +41,7 @@
     </div>
     
     <!--Top Main img slider-->
-    <div class="swiper-container">
+    <div class="swiper-container swiper-1">
       <!-- Additional required wrapper -->
       <div class="swiper-wrapper">
         <!-- Slides -->
@@ -51,49 +51,79 @@
       </div>
       
     </div>
-    <div class="swiper-pagination"></div>
+    <div class="swiper-pagination swiper-pagination-1"></div>
 
     <!--Top Main img slider-->
     <h2 class="subtitle">운세보기</h2>
     <div class="bar-deco"></div>
-    
-    <div class="category">
-      
-      <div class="img-box" class="img-box" OnClick="location.href ='#'" style="cursor:pointer;">
+
+    <div class="category">      
+      <div class="img-box" OnClick="location.href ='#'" style="cursor:pointer;">
         <img src="assets/img/bg/1.png" alt="">
         <h2>신점</h2>
       </div>
-    
-
       <div class="img-box" OnClick="location.href ='#'" style="cursor:pointer;">
         <img src="assets/img/bg/2.png" alt="">
         <h2>사주</h2>
       </div>
-      
-
       <div class="img-box" OnClick="location.href ='#'" style="cursor:pointer;">
         <img src="assets/img/bg/3.png" alt="">
         <h2>심리</h2>
       </div>
-    
-      
-
-      
     </div>
-    <div class="able">
 
+    <h2 class="subtitle">상담가능</h2>
+    <div class="bar-deco"></div>
+    <div class="able">
+      <div class="swiper-container swiper-2">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper swiper-2">
+          <!-- Slides -->
+          <div class="swiper-slide">
+            <div class="ablebox-1">
+              <div class="boolking-btn">상담예약</div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="ablebox-2">
+              <div class="boolking-btn">상담예약</div>
+            </div>
+            
+          </div>
+          <div class="swiper-slide">
+            <div class="ablebox-3">
+              <div class="boolking-btn">상담예약</div>
+          </div>
+            
+          </div>
+        </div>
+        
+      </div>
 
     </div>
     <div class="addbanner">
-
+      <img src="/assets/img/open_banner.jpg" alt="">
     </div>   
-    <div class="introduce">
-
+    
+    <h2 class="subtitle">천명인 이야기</h2>
+    <div class="bar-deco"></div>
+    <div class="story">
+      <img class="story-img" src="/assets/img/bg/story_1.png" alt="">
+      <div class="story-txtbox">
+        <span class="story-title">신점이란?</span>
+        <h3 class="story-description">음양오행론이란 세상만물이 음과 양의 양면이 있고, 
+          세상만물의 근원은 목,화,토,금,수 다섯의 근원적인 기운의 상호작용이라고 본 이론이다. 
+          이들 이론이 유행한 시기는 중국의 전국시대이다.</h3>
+      </div>
     </div>    
   </div>
 
+
+
+
+
   <script>
-    var swiper = new Swiper(".swiper-container", {
+    var swiper = new Swiper(".swiper-1", {
       spaceBetween: 30,
       centeredSlides: true,
       autoplay: {
@@ -101,16 +131,15 @@
         disableOnInteraction: false,
       },
       pagination: {
-        el: ".swiper-pagination",
+        el: ".swiper-pagination-1",
         clickable: true,
       },
-      navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
-      },
-    });
+    });   
 
-   
+    var swiper = new Swiper(".swiper-2", {
+      spaceBetween: 70,
+      slidesPerView: 3,    
+    });   
   </script>
 
 

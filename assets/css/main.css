@@ -76,11 +76,28 @@ input::placeholder {
       }
 
 /* 운세보기 */
-.subtitle {
+
+}
+
+.subtitle-container{
+    position: relative;
+    display: flex;    
+    width: 600px;
+    height: 100%;
+}
+
+ .subtitle-container .subtitle {
     margin-top: 24px;
     padding-left: 32px;
     font-size: 22px;
     color: #133C5A;
+}
+
+.subtitle-container .seeMore {
+    right: -62%;
+    top: 20px;
+    position: relative;
+    font-size: 12px;
 }
 
 .category {

@@ -9,30 +9,39 @@
     <link rel="stylesheet" href="node_modules/swiper/swiper-bundle.min.css"/> 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="assets/css/side_nav.css"/> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css"/>
     <script src="node_modules/swiper/swiper-bundle.js"></script>
     <script src="node_modules/swiper/swiper-bundle.min.js"></script>    
-    <title>천명인 - 하늘의 뜻을 인간에게</title>
+    <title>천명인 - 관리자페이지</title>
 </head>
 <body>
-  <div class="mainframe">
-    <header>
-      <div class="logo" OnClick="location.href ='#'" style="cursor:pointer;"><img src="assets/img/logo.jpg" alt=""> </div>
-      <nav>
-        <input type="checkbox" id="menu">
-          <label for="menu" class="menu-btn">
-            <span></span>
-            <span></span>
-            <span></span>
-          </label>
-          <ul class="side_nav">
-            <a href="#"><li>로그인</li></a>
-            <a href="#"><li>홈</li></a>
-            <a href="#"><li>예약정보</li></a>
-            <a href="#"><li>Contact</li></a>
-          </ul>        
-      </nav>            
-    </header>
-
-
+  <div class="side">
+    <ul>
+      <li>기본정보</li>
+      <li>무속인 정보</li>
+      <li>사용자 정보</li>
+      <li>상담 정보</li>
+      <li>예약 및 결제</li>
+    </ul>
+  <div class="top"><h1>관리자페이지</h1></div>
+  <div class="main">
+    <div class="info-box">
+      <div class="count-box"><span>가입자 현황</span>
+              
+      </div>
+      <div class="count-box"><span>무속인 현황</span></div>
+      <div class="count-box"><span>총 상담 현황</span></div>
+      <div class="count-box"><span>총 예약 현황</span></div>
+    </div>
+    <div class="info-box">
+      <div class="count-box"><span>신규 가입자</span></div>
+      <div class="count-box"><span>신규 무속인</span></div>
+      <div class="count-box"><span>금일 상담</span></div>
+      <div class="count-box"><span>금일 예약</span></div>
+    </div>
+    <div class="chart-box">
+    </div>
+  </div>
+  </div>
 </body>
 </html>

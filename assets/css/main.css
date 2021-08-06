@@ -75,9 +75,8 @@ input::placeholder {
         left: -30px;
       }
 
-/* 운세보기 */
 
-}
+/* 운세보기 */
 
 .subtitle-container{
     position: relative;
@@ -157,19 +156,103 @@ input::placeholder {
     bottom: 10px;
 }
 
-/* 상담가능 */
-.able {
-    padding-left: 32px;  
+/* 천명인 선생님들 */
+.section2 {
+    display: block;
+    width: 600px;
+    height: 350px;
+    background-color: #FDB75C;
+    content: '';
+}
+.subtitle-wh {
+    color: white;
+    padding-left: 32px;
 }
 
-.ablebox-1, .ablebox-2, .ablebox-3  {
+.verticalBar {
     display: block;
-    width: 196px;
-    height: 220px;
-    content: "";    
+    position: relative;
+    top: -46px;
+    margin-left: 220px;
+    background-color: white;
+    content: '';
+    width: 380px;
+    height: 2px;
+}
+
+.horizonBar {
+    display: block;
+    position: relative;
+    top: -60px;
+    margin-left: 33px;
+    content: '';
+    width: 2px;
+    height: 316px;
+    background-color: white;
+}
+
+
+.section2 .seeMore {
+    right: -82%;
+    top: -55px;
+    position: relative;
+    font-size: 12px;
+    color: white;
+}
+
+.counselor {
+    padding-left: 96px; 
+    z-index: 10;
+    position: relative; 
+    top: -350px;
+}
+
+.sellerbox-1, .sellerbox-2, .sellerbox-3  {    
+    width: 180px;
+    height: 260px;   
     border: white  2px;
     border-radius: 15px;
     box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.3);
+}
+
+.sellerbox-1 {
+    background-image: url(/assets/img/bg/people_1.png);
+    background-repeat: no-repeat;
+    
+}
+.sellerbox-2 {
+    background-image: url(/assets/img/bg/people_2.png);
+    background-repeat: no-repeat;
+}
+.sellerbox-3 {
+    background-image: url(/assets/img/bg/people_1.png);
+    background-repeat: no-repeat;
+}
+
+.inner-box {
+    margin: 0;
+    position: fixed;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 0px 0px 20px 20px;
+    border: none;
+    max-width: 180px;
+    width: 100%;
+    height: 132px;
+    top: 50%;
+}
+
+.inner-title {
+    font-size: 14px;
+
+}
+
+.inner-tag {
+    font-size: 12px;
+}
+
+.inner-dec {
+    font-size: 12px;
+
 }
 
 .boolking-btn {
@@ -179,15 +262,14 @@ input::placeholder {
     transform: translateX(-50%);
     width: 90px;
     height: 28px;
-    border: none;
     border-radius: 5px;
-    background-color: #6D6D6D;
+    border: #FD5C63 solid 2px;
     text-align: center;
-    color: white;
+    color: #FD5C63;
     cursor: pointer;
 }
 
-.ablebox-1:hover, .ablebox-2:hover, .ablebox-3:hover {
+.sellerbox-1:hover, .sellerbox-2:hover, .sellerbox-3:hover {
     transition:  all 0.35s ease-out;
     box-shadow: 6px 6px 6px rgba(0, 0, 0, 0.4);
 }
@@ -197,18 +279,6 @@ input::placeholder {
     color: red;
     transition:  all 0.35s ease-out;
 }
-
-
-.ablebox-1 {
-    background-color: red;
-}
-.ablebox-2 {
-    background-color: green;
-}
-.ablebox-3 {
-    background-color: hotpink;
-}
-
 
 .addbanner img {
     padding-left: 32px;

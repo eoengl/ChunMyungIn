@@ -47,60 +47,71 @@
         <div class="swiper-slide"><img src="assets/img/img1.jpg" alt=""></div>
         <div class="swiper-slide"><img src="assets/img/img2.jpg" alt=""></div>
         <div class="swiper-slide"><img src="assets/img/img3.jpg" alt=""></div>
-      </div>      
+      </div> 
+      <div class="swiper-pagination swiper-pagination"></div>     
     </div>
-    <div class="swiper-pagination swiper-pagination-1"></div>
+    
 
     <!--Top Main img slider-->
-    <div class="subtitle-container">
-    <h2 class="subtitle">운세보기</h2>   
-    <h3 class="seeMore" OnClick="location.href ='#'" style="cursor:pointer;">모두보기</h3>
-    <div class="bar-deco"></div>
-    </div>    
+    <div class="section1">
+      <div class="subtitle-container">
+        <h2 class="subtitle">운세보기</h2>   
+        <h3 class="seeMore" OnClick="location.href ='#'" style="cursor:pointer;">모두보기</h3>
+      <div class="bar-deco"></div>
+      </div>        
 
-    <div class="category">      
-      <div class="img-box" OnClick="location.href ='#'" style="cursor:pointer;">
-        <img src="assets/img/bg/1.png" alt="">
-        <h2>신점</h2>
-      </div>
-      <div class="img-box" OnClick="location.href ='#'" style="cursor:pointer;">
-        <img src="assets/img/bg/2.png" alt="">
-        <h2>사주</h2>
-      </div>
-      <div class="img-box" OnClick="location.href ='#'" style="cursor:pointer;">
-        <img src="assets/img/bg/3.png" alt="">
-        <h2>심리</h2>
+      <div class="category">      
+        <div class="img-box" OnClick="location.href ='#'" style="cursor:pointer;">
+          <img src="assets/img/bg/1.png" alt="">
+          <h2>신점</h2>
+        </div>
+        <div class="img-box" OnClick="location.href ='#'" style="cursor:pointer;">
+          <img src="assets/img/bg/2.png" alt="">
+          <h2>사주</h2>
+        </div>
+        <div class="img-box" OnClick="location.href ='#'" style="cursor:pointer;">
+          <img src="assets/img/bg/3.png" alt="">
+            <h2>심리</h2>
+        </div>
       </div>
     </div>
 
-
-
-    <h2 class="subtitle">상담가능</h2>
-    <div class="bar-deco"></div>
-    <div class="able">
+    <div class="section2">
+      <h2 class="subtitle-wh">천명인 선생님들</h2>
+      <div class="verticalBar"></div>
+      <h3 class="seeMore" OnClick="location.href ='#'" style="cursor:pointer;">모두보기</h3>
+      <div class="horizonBar"></div>
+    <div class="counselor">
       <div class="swiper-container swiper-2">
         <!-- Additional required wrapper -->
         <div class="swiper-wrapper swiper-2">
           <!-- Slides -->
           <div class="swiper-slide">
-            <div class="ablebox-1">
-              <div class="boolking-btn">상담예약</div>
+            <div class="sellerbox-1">
+              <div class="inner-box">
+                <h3 class=inner-title>숭구리당당당</h3>
+                <h4 class="inner-tag">#연애 #건강</h4>
+                <h4 class="inner-dec">아무한테 말도 못하는 고민 <br>
+                  경력 20년 속이 뻥뚫리는 상담...</h4>
+                <div class="boolking-btn">예약하기</div>
+              </div>              
             </div>
           </div>
           <div class="swiper-slide">
-            <div class="ablebox-2">
+            <div class="sellerbox-2">
               <div class="boolking-btn">상담예약</div>
-            </div>
-            
+            </div>            
           </div>
           <div class="swiper-slide">
-            <div class="ablebox-3">
+            <div class="sellerbox-3">
+              <div class="inner-box">
+
+              </div>
               <div class="boolking-btn">상담예약</div>
+          </div>            
           </div>
-            
-          </div>
-        </div>
-        
+        </div>        
+      </div>
       </div>
 
     </div>
@@ -121,10 +132,6 @@
     </div>    
   </div>
 
-
-
-
-
   <script>
     var swiper = new Swiper(".swiper-1", {
       spaceBetween: 30,
@@ -134,7 +141,7 @@
         disableOnInteraction: false,
       },
       pagination: {
-        el: ".swiper-pagination-1",
+        el: ".swiper-pagination",
         clickable: true,
       },
     });   
